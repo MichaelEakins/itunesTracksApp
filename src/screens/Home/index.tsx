@@ -50,6 +50,7 @@ export const Home: React.FC<HomeProps> = ({
                 trackPrice={item.trackPrice}
                 releaseDate={item.releaseDate}
                 primaryGenreName={item.primaryGenreName}
+                artworkUrl100={item.artworkUrl100}
               />
             )}
             keyExtractor={(item) => `${item.trackId}`}

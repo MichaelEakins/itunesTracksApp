@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, View} from 'react-native';
 import moment from 'moment';
 import {Colors} from '../../utils';
 
@@ -10,6 +10,7 @@ export interface TrackProps {
   trackPrice: string;
   releaseDate: string;
   primaryGenreName: string;
+  artworkUrl100: string;
 }
 export const Track: React.FC<TrackProps> = ({
   trackId,
@@ -18,7 +19,9 @@ export const Track: React.FC<TrackProps> = ({
   trackPrice,
   releaseDate,
   primaryGenreName,
+  artworkUrl100,
 }) => {
+  console.log(artworkUrl100);
   return (
     <View testID="artistContainer" key={trackId} style={styles.container}>
       <Text testID="artistName">Artist: {artistName}</Text>
@@ -36,6 +39,16 @@ export const Track: React.FC<TrackProps> = ({
       <View testID="genreContainer" style={styles.genre}>
         <Text testID="genreNameText">Genre: {primaryGenreName}</Text>
       </View>
+      <Image
+        style={{
+          width: 51,
+          height: 51,
+          resizeMode: 'contain',
+        }}
+        source={{
+          uri: artworkUrl100,
+        }}
+      />
     </View>
   );
 };
