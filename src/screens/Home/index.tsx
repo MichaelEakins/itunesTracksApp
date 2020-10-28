@@ -67,15 +67,15 @@ export const Home: React.FC<HomeProps> = ({
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'stretch',
+    alignItems: 'flex-start',
     height: '100%',
     justifyContent: 'flex-start',
     paddingHorizontal: 20,
     paddingTop: StatusBar.currentHeight || 30,
   },
   content: {
-    flex: 1,
     marginTop: 30,
+    width: '100%',
   },
   buttonContainer: {
     alignItems: 'flex-start',
@@ -83,9 +83,8 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   flatList: {
-    flex: 5,
     marginTop: 50,
-    bottom: 50,
+    bottom: 100,
   },
   spinnerContainer: {
     alignItems: 'center',
