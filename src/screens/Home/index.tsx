@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   flatList: {
-    marginTop: 50,
+    marginTop: 100,
     bottom: 100,
   },
   spinnerContainer: {
