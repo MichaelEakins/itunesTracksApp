@@ -1,6 +1,5 @@
 import React from 'react';
-import {Home, HomeProps, Item} from '../src/screens/Home';
-import {TrackProps} from '../src/components/Track';
+import {Home} from '../src/screens/Home';
 import {render} from '@testing-library/react-native';
 
 describe('Button tests', () => {
