@@ -67,9 +67,9 @@ export const Home: React.FC<HomeProps> = ({
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center',
+    alignItems: 'flex-start',
     height: '100%',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     paddingHorizontal: 20,
     paddingTop: StatusBar.currentHeight || 30,
   },
